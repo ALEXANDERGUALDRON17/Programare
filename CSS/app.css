@@ -31,7 +31,43 @@ a {
     color: inherit;
     cursor: none;
 }
-
+.conteny-descarga{
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background: #199319;
+    text-align: center;
+    border: 2px solid #adcaff;
+}
+.descarga-ahora{
+    display: inline-block;
+    text-decoration: none;
+    padding:  15px 20px;
+    background: #223094;
+    color: #adcaff;
+    border-radius: 5px;
+}
+.descarga-ahora:hover{
+    opacity: 0.9;
+}
+.btn-descarga{
+    display: inline-block;
+    padding: 15px 25px;
+    background: #223094;
+    color: #adcaff;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: 0px;
+    cursor: pointer;
+}
+.btn-descarga:hover{
+    opacity: 0.9;
+}
+.conteny-descarga i{
+    margin-left: 5px;
+}
 video {
     max-width: 100%;
     width: 100%;
@@ -95,7 +131,16 @@ body {
     cursor: none;
 }
 
-
+.fcc-btn {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+  }
+  
+  .fcc-btn:hover {
+    background-color: #223094;
+  }
 
 .circulos{ 
     position: absolute;
@@ -402,39 +447,4 @@ animation:circulo1 50s linear infinite both;
     position: absolute;
     z-index: 2;
 }
-.footer .span{}
 
-@keyframes circulo1{
-    form{
-        transform:rotate(0deg) scale(2);
-    }
-    to{
-        transform:rotate(360deg) scale(2);
-    }
-}
-@keyframes aparecer1{
-    from{
-        opacity: 0;
-        transform: translateY(50%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
-
-#cursor{
-    width:5em;
-    height:5em;
-    background-color: white;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index: 3;
-    pointer-events: none;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-}
-#cursor.mini{
-    transform: scale(0.7);
-}
